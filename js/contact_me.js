@@ -23,22 +23,18 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "/bin/contact_me.php",
+                // url: "/bin/contact_me.php",
+				url: "https://docs.google.com/a/bncsoft.com/forms/d/1XWKwDMKFBZkeS7UzW5HarnucIfaHkV60FJtI5X8oqDg/formResponse",
                 type: "POST",
-                data: {
-                    name: name,
-                    phone: phone,
-                    email: email,
-                    message: message
-                },
-                cache: false,
+				data: {"entry.1883697649": name, "entry.813023333": phone, "entry.921933331": email, "entry.1848955527": message },
+                dataType: "xml",
                 success: function() {
                     // Success message
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
                     $('#success > .alert-success')
-                        .append("<strong>문의사항이 접수되었습니다.</strong>");
+                        .append("<strong>문의사항이 접수되었습니다. </strong>");
                     $('#success > .alert-success')
                         .append('</div>');
 
@@ -47,11 +43,14 @@ $(function() {
                 },
                 error: function() {
                     // Fail message
-                    $('#success').html("<div class='alert alert-danger'>");
-                    $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                    $('#success').html("<div class='alert alert-success'>");
+                    $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + " it seems that my mail server is not responding...</strong> Could you please email me directly to <a href='mailto:sales@bncsoft.com?Subject=[홈페이지 문의사항];>sales@bncsoft.com</a> ? Sorry for the inconvenience!");
-                    $('#success > .alert-danger').append('</div>');
+                    $('#success > .alert-success')
+                        .append("<strong>문의사항이 접수되었습니다. </strong>");
+                    $('#success > .alert-success')
+                        .append('</div>');
+
                     //clear all fields
                     $('#contactForm').trigger("reset");
                 },
