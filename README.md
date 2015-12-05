@@ -1,1 +1,1 @@
-# bncsoft.github.io
+# This is for BNCSOFT's website.
