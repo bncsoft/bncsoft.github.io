@@ -1,11 +1,10 @@
-/* @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400);
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css); */
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
 
 body, html{
 	/* font-family: 'Lato', sans-serif; */
-	font-family: 'Nanum Gothic', sans-serif;
+	font-family: 'Nanum Gothic', sans-serif; 
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #5a5a5a;
@@ -35,13 +34,13 @@ h5{
 	line-height: 20px;
 }
 p{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Nanum Gothic', sans-serif; 
 }
 p.intro{
 	font-size: 16px;
 	margin: 12px 0 0;
 	line-height: 24px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Nanum Gothic', sans-serif; 
 }
 a{ color: #FCAC45;}
 a:hover,
@@ -175,7 +174,7 @@ ul.about-list li{
 	display: block;
 	font-size: 16px;
 	line-height: 30px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Nanum Ghothic', sans-serif;
 }
 ul.about-list li span{ 
 	margin-right: 10px;
@@ -489,7 +488,7 @@ label {
 	float: left;
 	font-size: 12px;
 	font-weight: 400;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Nanum Ghothic', sans-serif;
 }
 #tf-contact .form-control {
 	display: block;
